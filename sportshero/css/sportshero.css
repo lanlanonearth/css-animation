@@ -1,0 +1,305 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid red;*/
+}
+
+html, body {
+  font-size: 0.5px;
+  height: 100%;
+}
+
+.grass {
+    background: url(../svg/background.svg) 0 0 repeat;
+    background-size: cover;
+    height: 100%;
+
+      display: -webkit-flex;
+      display:         flex;
+      -webkit-align-items: center;
+              align-items: center;
+      -webkit-justify-content: center;
+              justify-content: center;
+}
+
+/* still parts */
+
+.stillparts {
+    background: url(../svg/stillparts.svg) 0 0 no-repeat;
+    width: 384em;
+    height: 384em;
+    position: relative;
+    margin: auto auto;
+}
+
+/* body parts */
+
+.arm-up {
+  background: url(../svg/arm-up.svg) 0 0 no-repeat;
+  width: 56em;
+  height: 36em;
+  position: absolute;
+  left: 196em;
+  top: 144em;
+  z-index: 1;
+}
+
+.hand-down {
+  background: url(../svg/hand-down.svg) 0 0 no-repeat;
+  width: 36em;
+  height: 40em;
+  position: absolute;
+  left: 84em;
+  top: 180em;
+  z-index: 1;
+}
+
+.hand-up {
+  background: url(../svg/hand-up.svg) 0 0 no-repeat;
+  width: 36em;
+  height: 40em;
+  position: absolute;
+  left: 216em;
+  top: 104em;
+}
+
+.feet-down {
+  background: url(../svg/feet-down.svg) 0 0 no-repeat;
+  width: 48em;
+  height: 44em;
+  position: absolute;
+  left: 180em;
+  top: 328em;
+}
+
+.feet-up {
+  background: url(../svg/feet-up.svg) 0 0 no-repeat;
+  width: 44em;
+  height: 40em;
+  position: absolute;
+  left: 280em;
+  top: 172em;
+}
+
+/* sports items */
+
+.basketball {
+    background: url(../svg/basketball-pattern.svg);
+    background-size: auto 92em;
+    width: 92em;
+    height: 92em;
+    border-radius: 50%;
+    position: absolute;
+    left: 188em;
+    top: 12em;
+}
+
+.soccer {
+    background: url(../svg/soccer.svg) 0 0 no-repeat;
+    background-size: auto 92em;
+    width: 92em;
+    height: 92em;
+    position: absolute;
+    border-radius: 50%;
+    left: 256em;
+    top: 80em;
+}
+
+.yo-yo-container {
+    width: 32em;
+    height: 122em;
+    position: absolute;
+    left: 86em;
+    top: 204em;
+    transform-origin: center top;
+  }
+
+.yo-yo {
+    background: url(../svg/yo-yo.svg) 0 0 no-repeat;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    width: 32em;
+    height: 122em;
+    position: absolute;
+    left: 0em;
+    top: 0em;
+}
+
+.shuttlecock-container {
+    width: 52em;
+    height: 104em;
+    position: absolute;
+    left: 202em;
+    top: 286em;
+}
+
+.shuttlecock {
+    background: url(../svg/shuttlecock.svg) 0 0 no-repeat;
+    width: 52em;
+    height: 52em;
+    position: absolute;
+    top: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.ancient-world {
+    min-width: 570px;
+    background-color: #166B7E;
+    margin: 0;
+    overflow: hidden;
+}
+
+.ancient-world > div {
+    position: relative;
+    width: 570px;
+    height: 345px;
+    padding-top: 100px;
+    background: #80CDC6 url(wrld1.svg?1) 0px 102px no-repeat;
+}
+
+
+
+
+
+.barrow-wheel {
+    background: url(barrow-wheel.svg) 0 0 no-repeat;
+    width: 235px;
+    height: 235px;
+    position: absolute;
+    left: 35px;
+    top: 35px;
+}
+
+.lift-top {
+    position: relative;
+    height: 500px;
+    width: 95px;
+    margin: 0 auto;
+    top: -10px;
+}
+
+.lift-top::before, .lift-top::after {
+    content: '';
+    background: url(rope-top.svg) 0 0 no-repeat;
+    position: absolute;
+    height: 100%;
+    width: 10px;
+    top: 0px;
+}
+
+.lift-top::before {
+    left: 0px;
+}
+
+.lift-top::after  {
+    right: 0px;
+}
+
+.lift-bottom {
+    position: relative;
+    height: 200px;
+    width: 95px;
+    margin: 0 auto;
+}
+
+.lift-bottom::before {
+    content: '';
+    background: url(rope-bottom.svg) 0 0 no-repeat;
+    position: absolute;
+    height: 100%;
+    width: 20px;
+    top: 0px;
+    left: 50%;
+    margin-left: -10px;
+}
+
+.lift-bottom .stone-wheel {
+    width: 100px;
+    height: 100px;
+    bottom: -50px;
+    left: -5px;
+}
+
+.platform {
+    background: url(lift-platform.svg) 0 0 no-repeat;
+    width: 149px;
+    height: 50px;
+    position: absolute;
+    left: -27px;
+    top: 420px;
+    z-index: 1;
+}
+
+.platform .stone-wheel {
+    left: 37px;
+    bottom: 50px;
+    width: 75px;
+    height: 75px;
+}
+
+.stone-wheel {
+    background: url(stone-wheel.svg) 0 0 no-repeat;
+    position: absolute;
+}
+
+.sun-small {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: -100px;
+    top: 200px;
+    z-index: 1;
+    background: url(sun-small.svg) 0px 0px no-repeat;
+}
+
+.clouds {
+    position: absolute;
+    width: 350px;
+    height: 260px;
+    right: 0px;
+    top: 0px;
+    background: url(clouds.svg) 0px 0px no-repeat;
+}
+
+.ship {
+    position: absolute;
+    width: 115px;
+    height: 115px;
+    left: 20px;
+    bottom: 35px;
+    background: url(wooden-ship.svg) 0px 0px no-repeat;
+}
+
+.water {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    left: 0px;
+    bottom: -5px;
+    background: url(water.svg) 0px 0px no-repeat;
+    z-index: 1;
+}
+
+/* secret*/
+.comet {
+    position: absolute;
+    background: url(comet.svg) no-repeat 0 0;
+    width: 100px;
+    height: 50px;
+    left: 200px;
+    top: -100px;
+}

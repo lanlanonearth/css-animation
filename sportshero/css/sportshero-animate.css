@@ -1,0 +1,118 @@
+@keyframes swing {
+  0% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(-45deg);
+  }
+}
+
+@keyframes shettlecock-rotate {
+  0% {
+    transform: rotate(45deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-45deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    background-position-x: 0em;
+  }
+  100% {
+    background-position-x: 120em;
+  }
+}
+
+@keyframes bump {
+  0% {
+    transform: translateY(10em);
+  }
+  100% {
+    transform: translateY(0em);
+  }
+}
+
+@keyframes shorten {
+  0% {
+    clip-path: circle(0%);
+  }
+  100% {
+    clip-path: circle(0%);
+  }
+}
+
+@keyframes roll-up {
+  0% {
+    background-position-y: -65em;
+  }
+  100% {
+    background-position-y: 0em;
+  }
+}
+
+.hand-up {
+  animation-name: bump;
+  animation-duration: 500ms;
+  animation-iteration-count: infinite;
+  animation-direction: reversealternate;
+}
+
+/* .feet-up {
+  animation-name: bump;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: reversealternate;
+} */
+
+.yo-yo-container {
+  animation-name: swing;
+  animation-duration: 1s;
+  animation-timing-function: ease-ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.yo-yo {
+  animation-name: roll-up;
+  animation-duration: 2s;
+  animation-timing-function: ease-ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.shuttlecock-container {
+  animation-name: shettlecock-rotate;
+  animation-duration: 700ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.basketball {
+  animation-name: spin, bump;
+  animation-duration: 500ms;
+  animation-iteration-count: infinite;
+  animation-direction: forwards;
+  animation-timing-function: linear;
+}
+
+.soccer {
+  animation-name: rotate;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: forwards;
+  animation-timing-function: linear;
+}
